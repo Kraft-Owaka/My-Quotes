@@ -39,6 +39,7 @@ Here is a run through of how to set up the application:
 * Header section and carousel not fully responsive.
     * Carousel caption  not fully interactive.
     * On reload the uploaded quotes are lost.
+    * The for is not fully interactive. 
 
 ## Technologies Used
 * Angular CLI version 8.0.3.
