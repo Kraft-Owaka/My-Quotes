@@ -19,8 +19,8 @@ Here are the features in summary:
 https://kraft-owaka.github.io/My-Quotes/
 
 #### [! Image description](link-to-image)]
-<img src ="./src/assets/Screenshot from.png">
-<img src = "./src/assets/Screenshot from1.png">
+<img src ="./src/assets/Screenshot from1.png">
+<img src = "./src/assets/Screenshot from2020.png">
 
 
 ## Behaviour Driven Development (BDD)
