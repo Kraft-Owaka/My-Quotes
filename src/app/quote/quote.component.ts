@@ -20,6 +20,11 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
     new Quote(6, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
     new Quote(7, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(8, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+
+
+ 
+    
     
 
   ];

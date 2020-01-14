@@ -3,9 +3,23 @@
 <hr>
 <ul>
   <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}}</li>
+    <li>{{quote.name}}Posted {{quote.completeDate|date|uppercase}}</li>
     <button (click)='toggleDetails(i)'>Quote Details</button>
     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
   </div>
 </ul>
-<p *ngIf='quotes.length > 8'>You have too many quotes</p>
+<!-- <p *ngIf='quotes.upvote===highest||quote.upvote>highest;else notHigh'appHighlight>
+  {{quote.description}}
+</p>
+<ng-template #notHigh>
+  {{quote.description}}
+</ng-template>
+<div id="votebuttons"><br>
+  <button id="votebutton" class="btn btn-warning" (click)="voting(i)">Upvote {{quote.upvote}}</button>
+  <button id="votebutton" class="btn btn-danger" (click)="devoting(i)">Downvote {{quote.downvote}}</button>
+</div><br>
+<button (click)='toggleDetails(i)' class="btn btn-success" id="quotedetails">Quote Details</button><br>
+          
+          <div *ngIf='quote.showDescription'>
+            <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+          </div> -->
