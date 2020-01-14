@@ -15,6 +15,9 @@ Here are the features in summary:
 * A delete button to delete a quote.
 * A form to submit a new quote.
 
+## Live link 
+https://kraft-owaka.github.io/My-Quotes/
+
 #### [! Image description](link-to-image)]
 <img src ="./src/assets/Screenshot from.png">
 <img src = "./src/assets/Screenshot from1.png">
