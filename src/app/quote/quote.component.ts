@@ -22,13 +22,12 @@ export class QuoteComponent implements OnInit {
     new Quote(7, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
     new Quote(8, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
 
-
- 
-    
-    
-
   ];
   completeQuote(isComplete, index){
+    if (isComplete) {
+      let toComplete = confirm('Are you sure you want to delete ${this.quotes[index].name}?')
+      
+    }
     if (isComplete) {
       this.quotes.splice(index,1);
     }

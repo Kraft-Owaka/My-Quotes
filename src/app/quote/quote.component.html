@@ -1,25 +1,22 @@
-
-<h1>My Quotes</h1>
-<hr>
-<ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}}Posted {{quote.completeDate|date|uppercase}}</li>
-    <button (click)='toggleDetails(i)'>Quote Details</button>
-    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+<div class="container">
+  <h1>My Quotes</h1>
+  <hr>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor='let quote of quotes;let i = index'>
+            <div>
+              <h4>{{quote.name}}Posted {{quote.completeDate|date|uppercase}}</h4>
+                <button (click)='toggleDetails(i)'>Quote Details</button>
+                <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+            </div>
+        
+            <!-- <div *ngIf='quote.showDescription'>
+              <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <p *ngIf='quotes.length > 8'>You have too many quotes</p>
   </div>
-</ul>
-<!-- <p *ngIf='quotes.upvote===highest||quote.upvote>highest;else notHigh'appHighlight>
-  {{quote.description}}
-</p>
-<ng-template #notHigh>
-  {{quote.description}}
-</ng-template>
-<div id="votebuttons"><br>
-  <button id="votebutton" class="btn btn-warning" (click)="voting(i)">Upvote {{quote.upvote}}</button>
-  <button id="votebutton" class="btn btn-danger" (click)="devoting(i)">Downvote {{quote.downvote}}</button>
-</div><br>
-<button (click)='toggleDetails(i)' class="btn btn-success" id="quotedetails">Quote Details</button><br>
-          
-          <div *ngIf='quote.showDescription'>
-            <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
-          </div> -->
+

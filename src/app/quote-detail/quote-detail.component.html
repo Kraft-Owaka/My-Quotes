@@ -1,4 +1,5 @@
 <p>
     {{quote.description}}
-  </p>
-  <button (click)= 'quoteComplete(true)'>Bleet quote</button>
+</p>
+<p>This quote will be complete in {{quote.completeDate|timeCount}} days</p>
+  <button (click)= 'quoteComplete(true)' class="btn btn-outline-banger">Bleet quote</button>
