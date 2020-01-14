@@ -2,4 +2,11 @@
     {{quote.description}}
 </p>
 <p>This quote will be complete in {{quote.completeDate|timeCount}} days</p>
-  <button (click)= 'quoteComplete(true)' class="btn btn-outline-banger">Bleet quote</button>
+
+  <div class="icon">
+    <span><button (click)=likebuttonclick() class="btn btn-warning">likes<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></span>
+   <span>{{numberoflikes}}</span>
+   <span><button (click)=dislikebuttonclick() class="btn btn-success">dislikes<i class="fa fa-thumbs-down" aria-hidden="true"></i></button></span>
+   <span>{{numberofdislikes}}</span><br><br>
+<button (click)= 'quoteComplete(true)' class="btn btn-outline-danger">Bleep Quote<i class="fa fa-trash" aria-hidden="true"></i></button>
+</div>
