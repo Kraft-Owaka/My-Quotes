@@ -8,6 +8,10 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+
   quotes:Quote []= [
     new Quote (1,'Watch finding Nemo','Find an online version and watch merlin find his son'),
     new Quote (2,'Watch finding Nemo','Find an online version and watch merlin find his son'),
