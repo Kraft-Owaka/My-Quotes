@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quote } from'../quote';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote',
@@ -9,13 +9,13 @@ import { Quote } from'../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote []= [
-    {id:1, name:'Watch finding Nemo',description:'Find an online version and watch merlin find his son'},
-    {id:2,name:'Buy Cookies',description:'Find an online version and watch merlin find his son'},
-    {id:3,name:'Get new Phone Case',description:'Find an online version and watch merlin find his son'},
-    {id:4,name:'Get Dog Food',description:'Find an online version and watch merlin find his son'},
-    {id:4,name:'Get Dog Food',description:'Find an online version and watch merlin find his son'},
-    {id:5,name:'Solve math homework',description:'Find an online version and watch merlin find his son'},
-    {id:6,name:'Plot my world domination plan',description:'Find an online version and watch merlin find his son'},
+    new Quote (1,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote (2,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote (3,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote (4,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote (5,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote (6,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote (7,'Watch finding Nemo','Find an online version and watch merlin find his son'),
   ];
 
   constructor() { }
