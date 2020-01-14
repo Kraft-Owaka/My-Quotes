@@ -13,14 +13,21 @@ export class QuoteComponent implements OnInit {
   }
 
   quotes:Quote []= [
-    new Quote (1,'Watch finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote (2,'Watch finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote (3,'Watch finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote (4,'Watch finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote (5,'Watch finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote (6,'Watch finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote (7,'Watch finding Nemo','Find an online version and watch merlin find his son'),
+    new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(2, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(3, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(4, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(5, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(6, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quote(7, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    
+
   ];
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
 
   constructor() { }
 
