@@ -1,8 +1,10 @@
-<p>
-    {{quote.description}}
-</p>
-<p>This quote will be complete in {{quote.completeDate|timeCount}} days</p>
+<body>
+    <p>
+        {{quote.description}}
+    </p>
 
+<p>This quote will be complete in {{quote.completeDate|timeCount}} days</p>
+</body>
   <div class="icon">
     <span><button (click)=likebuttonclick() class="btn btn-warning">likes<i class="fa fa-thumbs-up" aria-hidden="true"></i></button></span>
    <span>{{numberoflikes}}</span>
