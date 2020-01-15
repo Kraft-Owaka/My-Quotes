@@ -18,6 +18,9 @@ Here are the features in summary:
 ## Live link 
 https://kraft-owaka.github.io/My-Quotes/
 
+## CODEBEAT BADGE
+[![codebeat badge](https://codebeat.co/badges/1bd6b05d-17f2-4cfc-903b-5f4ace3a97e2)](https://codebeat.co/projects/github-com-kraft-owaka-my-quotes-master)
+
 #### [! Read me image and the appliationimage](link-to-image)]
 <img src = "./src/assets/Screenshot from2.png">
 <img src ="./src/assets/Screenshot from1.png">
