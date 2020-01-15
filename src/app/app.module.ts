@@ -8,7 +8,8 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { TimeCountPipe } from './time-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { QuoteDirective } from './quote.directive';
+import { DirectiveDirective } from './directive.directive';
+
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { QuoteDirective } from './quote.directive';
     QuoteDetailComponent,
     TimeCountPipe,
     QuoteFormComponent,
-    QuoteDirective,
+    DirectiveDirective,
+   
   
   ],
   imports: [
